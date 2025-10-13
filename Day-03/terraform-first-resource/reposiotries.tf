@@ -1,7 +1,3 @@
-provider "github" {
-   token=var.github_token
-
-}
 
 
 resource "github_repository" "terraform-first-repo1" {
