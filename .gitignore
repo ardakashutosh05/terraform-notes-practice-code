@@ -1,0 +1,45 @@
+# ----------------------------
+# Terraform .gitignore File
+# ----------------------------
+
+# Local .terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files (local-only configuration)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Ignore environment-specific files
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Ignore local OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.backup
