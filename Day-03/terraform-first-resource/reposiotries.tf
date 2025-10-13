@@ -8,6 +8,11 @@ resource "github_repository" "terraform-first-repo" {
 
 }
 
+output "terraform-first-repo-url" {
+  value = github_repository.terraform-first-repo.html_url
+
+}
+
 
 # terraform providers
 # terraform init
@@ -15,3 +20,5 @@ resource "github_repository" "terraform-first-repo" {
 # terraform destroy --auto-approve
 # terraform state list
 # terraform destroy -target=github_repository.terraform-first-repo1
+# terraform refresh
+# terraform show
