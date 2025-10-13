@@ -1,5 +1,6 @@
 provider "github" {
    token=var.github_token
+
 }
 
 
@@ -13,6 +14,5 @@ auto_init = true
 }
 # terraform providers
 # terraform init
-# terraform apply
+# terraform apply --auto-approve
 # terraform destroy
-# one
