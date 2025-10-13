@@ -3,13 +3,13 @@ variable "github_token" {
   type        = string
 }
 
-variable username {
-    default="ashu"
+variable "username" {
+  default = "ashu"
 }
 
 variable "age" {
-    default = 22
+  default = 22
 }
- variable "city" {
-    default = "jaipur"
- }
+variable "city" {
+  default = "jaipur"
+}

@@ -23,4 +23,6 @@ output "terraform-first-repo-url" {
 # terraform refresh
 # terraform show
 # terraform console # is se new cansole milta hai "exit"
-# terraform fmt
+# terraform fmt # code agjast in line 
+#
+#
