@@ -22,3 +22,5 @@ output "terraform-first-repo-url" {
 # terraform destroy -target=github_repository.terraform-first-repo1
 # terraform refresh
 # terraform show
+# terraform console # is se new cansole milta hai "exit"
+# terraform fmt
