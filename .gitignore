@@ -46,3 +46,4 @@ Thumbs.db
 
 terraform.tfvars
 
+id_rsa.pub
