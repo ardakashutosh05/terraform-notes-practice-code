@@ -10,4 +10,9 @@ variable "aws_secret_key" {
   type        = string
 }
 
+variable "public_key" {
+  description = "SSH public key in OpenSSH format"
+  type        = string
+}
+
 
