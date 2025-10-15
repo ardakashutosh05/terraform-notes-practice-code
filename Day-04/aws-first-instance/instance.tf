@@ -5,7 +5,7 @@ resource "aws_key_pair" "key-tf" {
 }
 
 # public_key = file("${path.module}/id_rsa.pud")
-
+#
 
 resource "aws_instance" "web" {
   ami           = "ami-0933f1385008d33c4"
