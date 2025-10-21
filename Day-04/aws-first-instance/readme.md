@@ -9,3 +9,6 @@
 - assign that group to instance.
 # 
 
+nginx install
+/var/www/html/index.nginx-debian.html -> hi ashutosh
+
