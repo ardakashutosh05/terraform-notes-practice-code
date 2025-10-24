@@ -10,4 +10,6 @@ resource "aws_instance" "web" {
   tags = {
     Name = "my-first-tf-instance"
   }
+  user_data = file("${path.module}/script.sh")
 }
+
