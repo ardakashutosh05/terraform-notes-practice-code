@@ -1,6 +1,6 @@
 variable username {
     type = string
-    default = "World"
+   # default = "World"
 }
 
 variable age {
