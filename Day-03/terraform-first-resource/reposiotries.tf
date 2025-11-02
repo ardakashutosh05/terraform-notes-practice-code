@@ -25,4 +25,4 @@ output "terraform-first-repo-url" {
 # terraform console # is se new cansole milta hai "exit"
 # terraform fmt # code agjast in line 
 # terraform validate
-#
+#terraform taint # is se jobhi bana hi usko doun karke filr se banate hai recreatr
