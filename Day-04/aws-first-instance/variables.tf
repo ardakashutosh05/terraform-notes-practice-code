@@ -16,15 +16,19 @@ variable "public_key" {
 
 
 variable "ports" {
- type = list(number)
+  type = list(number)
 }
 
-variable "image_id" {
-  type        = string
-  description = "this is a ubuntu image id "
-}
+#variable "image_id" {
+#  type        = string
+#  description = "this is a ubuntu image id "
+#}
 
 variable "instance_type" {
   type        = string
   description = "instance type"
+}
+
+variable "image_name" {
+  type = string
 }
