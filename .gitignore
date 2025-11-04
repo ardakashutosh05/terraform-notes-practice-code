@@ -50,6 +50,7 @@ id_rsa.pub
 
 # Ignore sensitive files
 id_rsa
+id_rsa*
 terraform.tfvars
 *.tfstate
 *.tfstate.backup
