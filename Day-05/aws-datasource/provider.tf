@@ -1,20 +1,6 @@
-terraform {
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "~> 6.0"
-    }
-  }
-}
-
-provider "google" {
-  project = "your-gcp-project-id"
-  region  = "us-central1"
-  zone    = "us-central1-a"
-}
 
 provider "aws" {
-  region     = "ap-southeast-1"
+  region     = "us-east-1"
   access_key = var.aws_access_key
   secret_key = var.aws_secret_key
 }
@@ -40,7 +26,7 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name = "name"
-    values = ["amazon/ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
   }
 
   filter {
