@@ -4,7 +4,7 @@ provider "aws" {
   secret_key = var.aws_secret_key
 }
 
-# datasource in terraform
+# Datasource in terraform 
 data "aws_ami" "ubuntu" {
   most_recent = 
   owners = ["099720109477"]
