@@ -21,11 +21,13 @@ resource "aws_instance" "web" {
 
   # file, local-exec, remote-exec
   provisioner "file" {
-    source      = "readme.md"     # terraform machine
+    source      = "readme.md"      # terraform machine
     destination = "/tmp/readme.md" # remote machine
   }
 
-  provisioner "local-exec" {
+
+
+  provisioner "local-exec" { # local-exec it work on local machin run that commant on local in terraform 
     #on_failure = continue
     #when = destroy
     command = "env>env.txt"
@@ -36,7 +38,7 @@ resource "aws_instance" "web" {
 
 
   # file, local-exec, remote-exec
-  provisioner "remote-exec" {
+  provisioner "remote-exec" { # jo bhiapka resorsr creat ho ga uske an dar run higa 
     inline = [
       "echo 'This is test content created by Terraform!' > /tmp/content.md"
     ]
@@ -51,3 +53,4 @@ output "instance_public_ip" {
   description = "The public ip address"
   value       = aws_instance.web.public_ip
 }
+# terraform one time apply ho gaya to fi aga ham ne script me chang kiya to terraform ko nahi pata chle ga ya fir se apply kito chang nahi hoga is kiy ansebale ply bok use hota terraform sirf plat form risorse manag kar ta hai 
