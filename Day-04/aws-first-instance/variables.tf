@@ -14,16 +14,16 @@ variable "public_key" {
   type        = string
 }
 
-variable  "ports"  {
+variable "ports" {
   type = list(number)
 }
 
 variable "image_id" {
-  type = string
+  type        = string
   description = "this is a ubuntu image id "
 }
 
 variable "instance_type" {
-  type = string
+  type        = string
   description = "instance type"
 }
