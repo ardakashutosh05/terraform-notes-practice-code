@@ -14,8 +14,9 @@ variable "public_key" {
   type        = string
 }
 
+/*
 variable "ports" {
-  type = list(number)
+ type = list(number)
 }
 
 variable "image_id" {
@@ -27,3 +28,4 @@ variable "instance_type" {
   type        = string
   description = "instance type"
 }
+*/
