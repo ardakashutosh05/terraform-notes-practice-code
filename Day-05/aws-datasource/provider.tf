@@ -1,3 +1,18 @@
+terraform {
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "~> 6.0"
+    }
+  }
+}
+
+provider "google" {
+  project = "your-gcp-project-id"
+  region  = "us-central1"
+  zone    = "us-central1-a"
+}
+
 provider "aws" {
   region     = "ap-southeast-1"
   access_key = var.aws_access_key
@@ -16,7 +31,7 @@ variable "aws_secret_key" {
 
 # datasource in terraform 
 data "aws_ami" "ubuntu" {
-  most_recent = 
+  most_recent = true
   owners = ["099720109477"]
 
   # name = amazon/ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20251015
