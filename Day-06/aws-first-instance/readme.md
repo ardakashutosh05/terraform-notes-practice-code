@@ -1,0 +1,15 @@
+# Tasks
+
+- ssh-key .> first-key
+- assign first-key to newly created instance.
+# ssh-keygen -t rsa
+# ./id_rsa
+
+- created a security group
+- assign that group to instance.
+# 
+
+nginx install
+/var/www/html/index.nginx-debian.html -> hi ashutosh
+
+terraform taint aws_security_group.allow_tls
