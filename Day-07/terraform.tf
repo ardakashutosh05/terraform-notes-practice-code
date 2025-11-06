@@ -1,6 +1,6 @@
 terraform {
   required_version = "1.13.3"
-  
+
   # terraform version comand
 
   required_providers {
