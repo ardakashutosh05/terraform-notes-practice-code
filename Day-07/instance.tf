@@ -7,5 +7,9 @@ module "mywebserver" {
   instance_type = var.instance_type
   image_id      = var.image_id
 
-  key_name = var.key_name
+  key_name = "${var.key_name}"
+}
+
+output mypublicIP {
+  value = module.mywebserver.publicIP
 }
