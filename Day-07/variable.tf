@@ -18,3 +18,17 @@ variable "image_id" {
   description = "AMI ID"
   type        = string
 }
+
+variable "key_name" {
+  description = "Key Pair Name"
+  type        = string
+}
+
+variable "key" {
+  default = "ashu-key"
+  type    = string
+}
+
+variable "ashu_key_pub" {
+  type = string
+}
