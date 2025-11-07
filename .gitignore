@@ -53,3 +53,7 @@ terraform.tfvars
 *.tfstate
 *.tfstate.backup
 .terraform/
+ashu-key
+ashu-key.pub
+*.ashu-key.pub
+.ashu-key.pub
