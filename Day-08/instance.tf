@@ -29,3 +29,5 @@ resource "aws_instance" "web" {
   ami           = "ami-0933f1385008d33c4" # Amazon Linux 2 AMI
   instance_type = "t3.micro"
 }
+###
+###

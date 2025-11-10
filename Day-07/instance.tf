@@ -14,4 +14,3 @@ output mypublicIP {
   value = module.mywebserver.publicIP
 }
 
-##
