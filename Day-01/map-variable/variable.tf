@@ -11,7 +11,8 @@ variable "username" {
     type = string
 }
 
-output "userage" {
+output "user" {
 
     value = " my name is ${var.username} and my age is ${lookup(var.usersage, "${var.username}")} "
 }
+# lookup man je default or -var madhe age ghe to

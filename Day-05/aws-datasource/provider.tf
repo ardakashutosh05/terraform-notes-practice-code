@@ -18,14 +18,14 @@ variable "aws_secret_key" {
 # datasource in terraform 
 data "aws_ami" "ubuntu" {
   most_recent = true
-  owners = ["099720109477"]
-
+  owners      = ["099720109477"]
+  # is me mu je ne che ke filter cha he yehe ani he ami id print karan output madhe
   # name = amazon/ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20251015
   # root device type = ebs
   # vert type = hvm
 
   filter {
-    name = "name"
+    name   = "name"
     values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
   }
 
@@ -35,7 +35,7 @@ data "aws_ami" "ubuntu" {
   }
 
   filter {
-    name = "virtualization-type"
+    name   = "virtualization-type"
     values = ["hvm"]
   }
 }

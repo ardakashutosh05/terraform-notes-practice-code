@@ -36,7 +36,7 @@ resource "aws_instance" "web" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("${path.module}/id_rsa")
+    private_key = file("${path.module}/ashu_id")
     host        = self.public_ip
   }
 
@@ -74,4 +74,4 @@ output "instance_public_ip" {
   description = "The public ip address"
   value       = aws_instance.web.public_ip
 }
-# terraform one time apply ho gaya to fi aga ham ne script me chang kiya to terraform ko nahi pata chle ga ya fir se apply kito chang nahi hoga is kiy ansebale ply bok use hota terraform sirf plat form risorse manag kar ta hai 
+# terraform one time apply ho gaya to fi aga ham ne script me chang kiya to terraform ko nahi pata chle ga ya fir se apply kito chang nahi hoga is kiy ansebale ply bok use hota terraform sirf plat form risorse manag kar ta hai  
