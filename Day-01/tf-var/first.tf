@@ -1,5 +1,5 @@
 variable age {
-    type = number
+   type = number
 
 }
 

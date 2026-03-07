@@ -38,7 +38,7 @@ resource "aws_instance" "web" {
     user        = "ubuntu"
     private_key = file("${path.module}/id_rsa")
     host        = self.public_ip
-  }
+  } 
 
   # file, local-exec, remote-exec
   provisioner "file" {
@@ -50,7 +50,8 @@ resource "aws_instance" "web" {
 
   provisioner "local-exec" { # local-exec it work on local machin run that commant on local in terraform 
     #on_failure = continue
-    #when = destroy
+    # ex echo "ashu is bad boy" >/readme.txt
+    #when = destroy # when maje ye block kab cha le ga jab sab destroy ho raha ho ga tab 
     command = "env>env.txt"
     environment = {
       envname = "envvalue"
