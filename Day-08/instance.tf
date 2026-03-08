@@ -1,12 +1,11 @@
 terraform {
   backend "s3" {
-    bucket = "ashu05-terraform-state-bucket"
-    region = "ap-southeast-1"
+    bucket = "ashu05-terraform-state-bucket-01"
+    region = "eu-north-1"
     key    = "terraform.tfstate"
-    dynamodb_table = "ashu-table-lock"
+    # dynamodb_table = "ashu-table-lock"
   }
 }
-
 
 variable "aws_access_key" {
   description = "The access key for the cloud provider"
@@ -27,7 +26,7 @@ provider "aws" {
 
 resource "aws_instance" "web" {
   ami           = "ami-0933f1385008d33c4" # Amazon Linux 2 AMI
-  instance_type = "t3.micro"
+  instance_type = "t3.small"
 }
 ###
 ###
